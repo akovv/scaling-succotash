@@ -1,0 +1,58 @@
+#1 задание
+a = float(input("Введите a: "))
+b = float(input("Введите b: "))
+p = a * b
+c = 2 * (a + b)
+print("Периметр: ", p)
+print("Площадь: ", c)
+
+
+
+
+#2 задание
+number = int(input("Введите пятизначноечисло: "))
+
+
+un = number % 10
+ten = (number // 10) % 10
+hun = (number // 100) % 10
+thousands = (number // 1000) % 10
+tenthousands = (number // 10000) % 10
+
+power_result = ten ** un
+product = power_result * hun
+difference = tenthousands - thousands
+otvet = product / difference
+print("Результат вычислений: ", otvet)
+
+
+#3 задание
+def check_investment(x, a, b):
+    if a >= x and b >= x:
+        return 2
+    elif a >= x or b >= x:
+        return 1
+    else:
+        return 0
+x = int(input("Введите минимальную сумму инвестиций: "))
+a = int(input("Сколько денег у Майкла: "))
+b = int(input("Сколько денег у Ивана: "))
+result = check_investment(x, a, b)
+if result == 2:
+    print("Оба могут вложиться")
+elif result == 1:
+    if a >= x:
+        print("Майкл может вложиться")
+    else:
+        print("Иван может вложиться")
+else:
+    print("Никто не может вложиться")
+
+
+
+#3 задание
+a = int(input())
+zero = 0
+for x in range(n):
+    x += 0
+print(x)
